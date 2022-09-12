@@ -41,6 +41,13 @@ functions:
           path: /tasks/{id}
           method: get
 
+  updateTask:
+    handler: src/updateTask.updateTask
+    events:
+      - httpApi:
+          path: /tasks/{id}
+          method: put
+
 resources:
   Resources:
     TaskTable:
