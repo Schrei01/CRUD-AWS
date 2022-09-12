@@ -22,7 +22,7 @@ const addTask = async(event) => {
     }).promise().catch(x => console.log(x));
 
     return {
-        statusCode: 200,
+        status: 200,
         body: JSON.stringify(newTask),
     };
 
